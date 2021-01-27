@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	line-height: 2;
+}
+h3 {
+	font-weight: 700;
+	color: hsl(229, 23%, 23%);
+}
+p {
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+span {
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+	margin-left: 8px;
+}
+
+.page {
+	height: 100vh;
+	background-color: #19a1ad;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	z-index: -2;
+}
+
+.card {
+	width: 480px;
+	height: 530px;
+	background-color: white;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-balloon,
+.bottom-balloon {
+	position: absolute;
+	width: 1300px;
+	z-index: -1;
+}
+.top-balloon {
+	top: -750px;
+	left: -350px;
+}
+
+.bottom-balloon {
+	width: 1300px;
+	right: -320px;
+	bottom: -850px;
+}
+
+.top-card {
+	background-image: url(./images/bg-pattern-card.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 38%;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	text-align: center;
+	position: relative;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	background-color: white;
+	width: 150px;
+	border: 8px white solid;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: -75px;
+}
+
+.bottom-card {
+	display: flex;
+	flex-direction: column;
+	height: 62%;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.info {
+	margin-top: 100px;
+}
+
+.social {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	text-align: center;
+	padding: 25px 60px;
+	border-top: 1px solid hsl(0, 1%, 86%);
+}
